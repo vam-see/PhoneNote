@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/layout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/lytBanner"
+        android:background="@drawable/layout_bg_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtContactName"
+            android:text="Contact Name"
+            android:textColor="@android:color/white"
+            style="@style/PrimaryText"/>
+
+        <TextView
+            android:id="@+id/txtPhNumber"
+            android:text="Phone Number"
+            android:layout_below="@+id/txtContactName"
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/white"
+            style="@style/SubText"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/imgBtnClose"
+            android:src="@drawable/ic_action_close"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/Actions"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txtMsg"
+        android:text="Message"
+        android:paddingTop="4dp"
+        android:layout_below="@id/lytBanner"
+        style="@style/SubText"/>
+</RelativeLayout>

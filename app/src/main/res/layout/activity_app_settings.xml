@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="navatrana.projecttakenote.AppSettings">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnBackup"
+        android:text="@string/backup"
+        style="@style/MyButtons"/>
+
+    <View
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/btnBackup"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <!--<android.support.v7.widget.AppCompatButton-->
+        <!--android:layout_below="@+id/div1"-->
+        <!--android:id="@+id/btnCredits"-->
+        <!--android:text="@string/credits"-->
+        <!--style="@style/MyButtons"/>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_below="@+id/btnCredits"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/divider"/>-->
+
+</RelativeLayout>

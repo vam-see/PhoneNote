@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="navatrana.projecttakenote.MainActivity">
+
+    <item android:title="@string/menu_share" android:id="@+id/share_setting"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:title="@string/menu_about" android:id="@+id/about_setting"
+        android:orderInCategory="100" app:showAsAction="never"/>
+
+    <item android:title="@string/menu_help" android:id="@+id/hf_setting"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:title="@string/menu_report" android:id="@+id/bug_setting"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:title="@string/menu_settings" android:id="@+id/app_setting"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

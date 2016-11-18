@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/lytBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg_2">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtContactName"
+                android:text="Contact Name"
+                android:textColor="@android:color/white"
+                style="@style/PrimaryText"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtPhNumber"
+                android:text="Phone Number"
+                android:autoLink="phone"
+                android:linksClickable="true"
+                android:textColorLink="@android:color/white"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/txtContactName"
+                android:paddingBottom="4dp"
+                style="@style/SubText"/>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/imgBtnCall"
+                android:src="@drawable/ic_action_call"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                style="@style/Actions"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtMsg"
+            android:text="Message"
+            android:paddingTop="4dp"
+            android:layout_below="@id/lytBanner"
+            style="@style/SubText"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/imgBtnEdit"
+            android:src="@drawable/ic_action_edit"
+            android:layout_below="@id/txtMsg"
+            android:paddingBottom="8dp"
+            style="@style/Actions"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/imgBtnDel"
+            android:src="@drawable/ic_action_delete"
+            android:layout_below="@id/txtMsg"
+            android:layout_toRightOf="@+id/imgBtnEdit"
+            android:paddingBottom="8dp"
+            style="@style/Actions"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
